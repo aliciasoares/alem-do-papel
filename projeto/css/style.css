@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e cores */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Container central */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.cabecalho h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.cabecalho p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* Menu de navegação */
+.menu-navegacao {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.menu-navegacao li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    transition: all 0.3s;
+}
+
+.menu-navegacao li a:hover {
+    background-color: #fff;
+    color: #ff6f61;
+}
+
+/* Seções */
+.secao {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+}
+
+.secao h2 {
+    color: #ff6f61;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Artigos de vertentes */
+.artigo-vertente {
+    background-color: #ffeae6;
+    border-left: 5px solid #ff6f61;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.artigo-vertente h3 {
+    margin-bottom: 10px;
+    color: #d14c3c;
+}
+
+/* Listas de dicas */
+.lista-dicas {
+    list-style: disc inside;
+    margin-top: 15px;
+}
+
+.lista-dicas li {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.rodape p {
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media(max-width: 768px){
+    .cabecalho h1 {
+        font-size: 2.2rem;
+    }
+
+    .secao h2 {
+        font-size: 1.6rem;
+    }
+
+    .menu-navegacao {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
